@@ -1,0 +1,134 @@
+body {
+  font-family: "Righteous", cursive;
+}
+
+form {
+  position: relative;
+  width: 400px;
+  top: 40px;
+  left: 8px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.current-location-button {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  padding: 5px 7px 5px 7px;
+  display: block;
+  margin-left: 330px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: white;
+  font-family: "Chakra Petch", sans-serif;
+  cursor: pointer;
+}
+h1 {
+  color: rgb(89, 139, 255);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+h1:hover {
+  color: rgb(252, 235, 209);
+  transition: all 200ms ease-in-out;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.current-icon {
+  text-align: left;
+  position: relative;
+  left: 25px;
+  bottom: 20px;
+}
+
+.container {
+  background: radial-gradient(
+    673px at 10% 20%,
+    rgb(255, 220, 163) 0%,
+    rgb(129, 255, 239) 48.5%,
+    rgb(139, 172, 251) 97.8%
+  );
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px 50px 10px 50px;
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.currentTemp {
+  color: rgb(89, 139, 255);
+  font-size: 70px;
+  font-weight: 800;
+  text-align: right;
+  position: relative;
+  bottom: 180px;
+  left: 330px;
+}
+
+.units {
+  color: rgb(89, 139, 255);
+  font-size: 15px;
+  text-align: right;
+  position: relative;
+  bottom: 218px;
+  left: 335px;
+}
+
+.currentCondition,
+.humidity,
+.chanceRain {
+  color: white;
+  text-align: right;
+  position: relative;
+  bottom: 200px;
+  right: 40px;
+}
+
+.col-2 {
+  background: rgba(180, 188, 231, 0.5);
+  color: #67669b;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 100%;
+  box-shadow: 5px 4px 2px 1px rgba(255, 239, 169, 0.397);
+  border-color: lightgray;
+  margin: 5px 5px -140px 10px;
+  position: relative;
+  top: -170px;
+  padding: 10px 5px;
+}
+
+.icon {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.weekday {
+  font-size: 14px;
+  color: white;
+}
+
+.next-high-temp {
+  font-size: 16px;
+  font-weight: 900;
+  color: rgb(129, 255, 239);
+}
+
+.next-low-temp {
+  font-size: 16px;
+  font-weight: 900;
+  color: rgb(82, 107, 167);
+}

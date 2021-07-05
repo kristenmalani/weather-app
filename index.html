@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App by Kristen Malani</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder=" Please enter city..."
+            autocomplete="off"
+            autofocus="on"
+            id="search-text-input"
+          />
+        </form>
+        <button class="current-location-button" id="current-location">
+          <strong> 📍 Current Location</strong>
+        </button>
+      </div>
+      <h1 id="city">San Diego</h1>
+      <h2>Wednesday Jun 30, as of 4:44 PM</h2>
+      <div class="current-icon">
+        <img src="images/cloudy.svg" alt="cloudy" width="300" />
+      </div>
+      <span class="currentTemp" id="currentTemp">77</span>
+      <span class="units">
+        <a href="#" id="fahrenheit-link">°F</a> |
+        <a href="#" id="celsius-link">°C</a>
+      </span>
+      <div class="currentCondition" id="temperature-description">
+        partly cloudy
+      </div>
+      <div class="humidity">Humidity: 66%</div>
+      <div class="chanceRain">Chance of Rain: 10%</div>
+      <div class="row">
+        <div class="col-2">
+          <div class="weekday">Thursday</div>
+          <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
+          <div class="next-high-temp">72°F</div>
+          <div class="next-low-temp">64°F</div>
+        </div>
+        <div class="col-2">
+          <div class="weekday">Friday</div>
+          <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
+          <div class="next-high-temp">72°F</div>
+          <div class="next-low-temp">64°F</div>
+        </div>
+        <div class="col-2">
+          <div class="weekday">Saturday</div>
+          <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
+          <div class="next-high-temp">72°F</div>
+          <div class="next-low-temp">64°F</div>
+        </div>
+        <div class="col-2">
+          <div class="weekday">Sunday</div>
+          <span class="icon"><img src="images/sun.svg" width="40" /></span>
+          <div class="next-high-temp">74°F</div>
+          <div class="next-low-temp">64°F</div>
+        </div>
+        <div class="col-2">
+          <div class="weekday">Monday</div>
+          <span class="icon"><img src="images/sun.svg" width="40" /></span>
+          <div class="next-high-temp">75°F</div>
+          <div class="next-low-temp">64°F</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
