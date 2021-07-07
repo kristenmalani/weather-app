@@ -36,7 +36,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-h2.innerHTML = `${day} ${month} ${date}, ${year} at ${hours}:${minutes}`;
+h2.innerHTML = `${day} ${month} ${date}, ${year} | ${hours}:${minutes}`;
 
 // add search engine, when searching for city, display city name after user submits form
 // On your project, when a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
@@ -87,7 +87,7 @@ function retrievePosition(position) {
   let longitude = position.coords.longitude;
   let units = "imperial";
   let apiKey = "a0fc8949603a1172276df866d06c037a";
-  let apiEndpoint = "http://api.openweathermap.org/data/2.5/weather";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(showCurrent);
