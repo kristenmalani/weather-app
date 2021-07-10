@@ -23,68 +23,95 @@
   </head>
   <body>
     <div class="container">
-      <div class="search">
-        <form id="search-form">
-          <input
-            type="text"
-            placeholder=" Please enter city..."
-            autocomplete="off"
-            autofocus="on"
-            id="search-text-input"
-          />
-        </form>
-        <button class="current-location-button" id="current-location">
-          <strong> 📍 Current Location</strong>
-        </button>
-      </div>
-      <h1 id="city">San Diego</h1>
-      <h2>Wednesday Jun 30, 2021 | 4:44 PM</h2>
-      <div class="current-icon">
-        <img src="images/cloudy.svg" alt="cloudy" width="300" />
-      </div>
-      <span class="currentTemp" id="currentTemp">77</span>
-      <span class="units">
-        <a href="#" id="fahrenheit-link">°F</a> |
-        <a href="#" id="celsius-link">°C</a>
-      </span>
-      <div class="currentCondition" id="temperature-description">
-        partly cloudy
-      </div>
-      <div class="humidity">Humidity: 66%</div>
-      <div class="chanceRain">Chance of Rain: 10%</div>
-      <div class="row">
-        <div class="col-2">
-          <div class="weekday">Thursday</div>
-          <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
-          <div class="next-high-temp">72°F</div>
-          <div class="next-low-temp">64°F</div>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Please enter city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <button class="current-location-button" id="current-location">
+            <strong> 📍 Current Location</strong>
+          </button>
         </div>
-        <div class="col-2">
-          <div class="weekday">Friday</div>
-          <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
-          <div class="next-high-temp">72°F</div>
-          <div class="next-low-temp">64°F</div>
+        <div class="overview">
+          <h1 id="city">San Diego</h1>
+          <h2>Wednesday Jun 30, 2021 | 4:44 PM</h2>
         </div>
-        <div class="col-2">
-          <div class="weekday">Saturday</div>
-          <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
-          <div class="next-high-temp">72°F</div>
-          <div class="next-low-temp">64°F</div>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+              <img
+                src="images/sun.svg"
+                alt="cloudy"
+                id="current-icon"
+                class="float-left"
+              />
+              <strong class="currentTemp" id="current-temp"></strong>
+              <span class="units">
+                <a href="#" id="celsius-link" class="active">°C </a> |
+                <a href="#" id="fahrenheit-link" class="fahrenheit">°F</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li><span id="temperature-description"></span></li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-2">
-          <div class="weekday">Sunday</div>
-          <span class="icon"><img src="images/sun.svg" width="40" /></span>
-          <div class="next-high-temp">74°F</div>
-          <div class="next-low-temp">64°F</div>
-        </div>
-        <div class="col-2">
-          <div class="weekday">Monday</div>
-          <span class="icon"><img src="images/sun.svg" width="40" /></span>
-          <div class="next-high-temp">75°F</div>
-          <div class="next-low-temp">64°F</div>
+        <div class="row">
+          <div class="col-2">
+            <div class="weekday">Thursday</div>
+            <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
+            <div class="next-high-temp">72°F</div>
+            <div class="next-low-temp">64°F</div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">Friday</div>
+            <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
+            <div class="next-high-temp">72°F</div>
+            <div class="next-low-temp">64°F</div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">Saturday</div>
+            <span class="icon"><img src="images/cloudy.svg" width="40" /></span>
+            <div class="next-high-temp">72°F</div>
+            <div class="next-low-temp">64°F</div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">Sunday</div>
+            <span class="icon"><img src="images/sun.svg" width="40" /></span>
+            <div class="next-high-temp">74°F</div>
+            <div class="next-low-temp">64°F</div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">Monday</div>
+            <span class="icon"><img src="images/sun.svg" width="40" /></span>
+            <div class="next-high-temp">75°F</div>
+            <div class="next-low-temp">64°F</div>
+          </div>
         </div>
       </div>
     </div>
+
     <footer>
       <p class="name">
         <a href="https://github.com/kristenmalani/weather-app" target="_blank"
