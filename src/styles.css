@@ -11,8 +11,9 @@ form {
 
 h1 {
   color: rgb(89, 139, 255);
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 800;
+  text-align: center;
 }
 
 h1:hover {
@@ -23,10 +24,10 @@ h1:hover {
 h2 {
   color: white;
   font-weight: 300;
-  font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 ul {
@@ -40,10 +41,10 @@ li {
   text-align: right;
   margin: 0;
   padding: 0;
-  font-size: 24px;
   font-weight: 100;
   line-height: 20px;
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
 li:first-letter {
@@ -74,7 +75,7 @@ li:first-letter {
   font-family: "Chakra Petch", sans-serif;
   cursor: pointer;
   display: block;
-  margin-left: 360px;
+  margin-left: 370px;
   margin-top: 10px;
 }
 
@@ -96,7 +97,7 @@ li:first-letter {
   font-weight: 800;
   line-height: 1;
   position: relative;
-  left: 100px;
+  left: 70px;
 }
 
 .units {
@@ -104,7 +105,7 @@ li:first-letter {
   font-size: 16px;
   position: relative;
   top: -32px;
-  left: 100px;
+  left: 70px;
 }
 
 .weather-temperature .active {
@@ -129,7 +130,7 @@ li:first-letter {
   max-width: 100%;
   box-shadow: 5px 4px 2px 1px rgba(255, 239, 169, 0.397);
   border-color: lightgray;
-  margin: 5px 8px -5px 10px;
+  margin: 10px 5px 5px 10px;
   position: relative;
   padding: 10px 5px;
   top: -10px;

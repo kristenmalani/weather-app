@@ -55,6 +55,8 @@ function showTemperature(response) {
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#current-icon");
 
+  celsiusTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -73,11 +75,28 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let currentTemperature = document.querySelector("#current-temp");
   currentTemperature.innerHTML = `${temperature}`;
+
   let city = response.data.name;
   let currentCity = document.querySelector("#city");
   currentCity.innerHTML = `${city}`;
+
   let description = document.querySelector("#temperature-description");
   description.innerHTML = response.data.weather[0].description;
+
+  let humidity = Math.round(response.data.main.humidity);
+  let currentHumidity = document.querySelector("#humidity");
+  currentHumidity.innerHTML = `${humidity}`;
+
+  let windSpeed = Math.round(response.data.wind.speed);
+  let currentWindSpeed = document.querySelector("#wind");
+  currentWindSpeed.innerHTML = `${windSpeed}`;
+
+  let currentIcon = document.querySelector("#current-icon");
+  currentIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  currentIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function retrievePosition(position) {
@@ -130,7 +149,7 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-celsiusTemperature = null;
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
