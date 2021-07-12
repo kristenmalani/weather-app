@@ -97,7 +97,7 @@ li:first-letter {
   font-weight: 800;
   line-height: 1;
   position: relative;
-  left: 70px;
+  left: 100px;
 }
 
 .units {
@@ -105,45 +105,33 @@ li:first-letter {
   font-size: 16px;
   position: relative;
   top: -32px;
-  left: 70px;
-}
-
-.weather-temperature .active {
-  color: rgba(54, 55, 110, 0.705);
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
-.weather-temperature .fahrenheit {
-  text-decoration: none;
+  left: 100px;
 }
 
 .col-2 {
-  background: rgba(180, 188, 231, 0.4);
+  background: rgba(180, 188, 231, 0.5);
   color: #67669b;
   border-radius: 20px;
   text-align: center;
-  max-width: 100%;
   box-shadow: 5px 4px 2px 1px rgba(255, 239, 169, 0.397);
   border-color: lightgray;
-  margin: 10px 5px 5px 10px;
+  margin: 5px 5px 5px 5px;
   position: relative;
   padding: 10px 5px;
-  top: -10px;
 }
 
 .icon {
-  font-size: 20px;
   opacity: 0.8;
 }
 
 .weather-forecast-date {
   font-size: 14px;
   color: white;
+}
+
+.weather-forecast-date:hover {
+  color: rgb(252, 235, 209);
+  transition: all 200ms ease-in-out;
 }
 
 .weather-forecast-max {
