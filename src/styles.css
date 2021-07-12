@@ -123,7 +123,7 @@ li:first-letter {
 }
 
 .col-2 {
-  background: rgba(180, 188, 231, 0.5);
+  background: rgba(180, 188, 231, 0.4);
   color: #67669b;
   border-radius: 20px;
   text-align: center;
@@ -141,21 +141,21 @@ li:first-letter {
   opacity: 0.8;
 }
 
-.weekday {
+.weather-forecast-date {
   font-size: 14px;
   color: white;
 }
 
-.next-high-temp {
+.weather-forecast-max {
   font-size: 16px;
   font-weight: 900;
-  color: rgb(129, 255, 239);
+  color: rgb(89, 139, 255);
 }
 
-.next-low-temp {
+.weather-forecast-min {
   font-size: 16px;
   font-weight: 900;
-  color: rgb(82, 107, 167);
+  color: whitesmoke;
 }
 
 .name {
