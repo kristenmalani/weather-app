@@ -59,9 +59,9 @@ li:first-letter {
     rgb(139, 172, 251) 97.8%
   );
 
-  margin: 20px auto;
+  margin: 10px auto;
   border-radius: 20px;
-  padding: 20px 40px;
+  padding: 20px 30px;
   min-width: 600px;
   max-width: 600px;
 }
@@ -69,14 +69,14 @@ li:first-letter {
 .current-location-button {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px 7px 5px 7px;
   border-radius: 5px;
   border-color: white;
   font-family: "Chakra Petch", sans-serif;
   cursor: pointer;
   display: block;
-  margin-left: 370px;
+  margin-left: 410px;
   margin-top: 10px;
 }
 
@@ -114,11 +114,11 @@ li:first-letter {
   color: #67669b;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 5px 4px 2px 1px rgba(255, 239, 169, 0.397);
+  box-shadow: 5px 2px 2px 1px rgba(255, 254, 210, 0.7);
   border-color: lightgray;
-  margin: 5px 5px 5px 5px;
+  margin: 10px 5px 10px 10px;
   position: relative;
-  padding: 10px 5px;
+  padding: 10px 5px 10px 5px;
 }
 
 .icon {
